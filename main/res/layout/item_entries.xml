@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textSize="50dp"-->
+        <!--android:id="@+id/TV_item_entries_month"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/layer_list_shadow"
+        android:layout_marginBottom="5dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                android:id="@+id/LL_item_entries_date">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorText"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:id="@+id/TV_item_entries_day"/>
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorText"
+                    android:id="@+id/TV_item_entries_dayOfWeek"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL_item_entries_time"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/TV_item_entries_time"
+                    android:textSize="14dp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@+id/RL_item_entries_time"
+                android:layout_toRightOf="@+id/LL_item_entries_date"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/TV_item_entries_title"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textSize="13dp"
+                    android:id="@+id/TV_item_entries_summary"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
